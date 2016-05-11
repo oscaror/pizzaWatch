@@ -1,15 +1,83 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6221" systemVersion="13E28" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3733"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="PizzApp_Watch_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="left" text="Bienvenido a PizzApp!" textAlignment="center" minimumScaleFactor="0.80000000000000004" id="88i-Xb-p1U"/>
+                        <button width="1" alignment="left" title="Iniciar" id="PYv-tb-kCD">
+                            <connections>
+                                <segue destination="GIX-UG-huJ" kind="push" id="scV-yS-dWu"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
             </objects>
+            <point key="canvasLocation" x="245" y="305"/>
+        </scene>
+        <!--pushTamaño-->
+        <scene sceneID="hP0-PG-r6w">
+            <objects>
+                <controller identifier="pushTamaño" id="GIX-UG-huJ" customClass="Tamaño" customModule="PizzApp_Watch_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Selecciona el tamaño" textAlignment="center" minimumScaleFactor="0.80000000000000004" id="SpH-95-c6b"/>
+                        <separator alignment="left" id="IOE-oy-wJu"/>
+                        <button width="1" alignment="left" title="Chica" id="h2u-jq-HUe">
+                            <connections>
+                                <action selector="bChica" destination="GIX-UG-huJ" id="vOz-el-j3w"/>
+                            </connections>
+                        </button>
+                        <separator alignment="left" id="vOH-Fs-O2P"/>
+                        <button width="1" alignment="left" title="Mediana" id="bGA-Tl-O7E">
+                            <connections>
+                                <action selector="bMediana" destination="GIX-UG-huJ" id="WpU-mU-Bu8"/>
+                            </connections>
+                        </button>
+                        <separator alignment="left" id="JKM-4z-kcv"/>
+                        <button width="1" alignment="left" title="Grande" id="no6-1I-gSZ">
+                            <connections>
+                                <action selector="bGrande" destination="GIX-UG-huJ" id="sbl-jy-0UM"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="465" y="305"/>
+        </scene>
+        <!--pushMasa-->
+        <scene sceneID="9p6-Zi-JGs">
+            <objects>
+                <controller identifier="pushMasa" id="fww-hI-7jd" customClass="Masa" customModule="PizzApp_Watch_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Selecciona la masa" textAlignment="center" minimumScaleFactor="0.90000000000000002" id="cEy-2L-NaO"/>
+                        <separator alignment="left" id="EtH-Ul-CQN"/>
+                        <button width="1" alignment="left" title="Delgada" id="ADn-32-TX4">
+                            <connections>
+                                <action selector="bDelgada" destination="fww-hI-7jd" id="agB-pz-gvt"/>
+                            </connections>
+                        </button>
+                        <separator alignment="left" id="PxC-eI-YfG"/>
+                        <button width="1" alignment="left" title="Crujiente" id="sWZ-Jt-LB4">
+                            <connections>
+                                <action selector="bCrujiente" destination="fww-hI-7jd" id="eta-59-tzL"/>
+                            </connections>
+                        </button>
+                        <separator alignment="left" id="X5V-Uz-a1B"/>
+                        <button width="1" alignment="left" title="Gruesa" id="lCt-ur-7UJ">
+                            <connections>
+                                <action selector="bGruesa" destination="fww-hI-7jd" id="iET-fj-O6i"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="682" y="300"/>
         </scene>
     </scenes>
 </document>
