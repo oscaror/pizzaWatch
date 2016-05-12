@@ -79,6 +79,24 @@
             </objects>
             <point key="canvasLocation" x="682" y="300"/>
         </scene>
+        <!--pushFinal-->
+        <scene sceneID="vcs-tg-2c7">
+            <objects>
+                <controller identifier="pushFinal" id="Yfl-N5-6ub">
+                    <items>
+                        <label width="1" alignment="left" text="Orden confirmada" textAlignment="center" numberOfLines="0" minimumScaleFactor="0.80000000000000004" id="7FK-Om-Fkw"/>
+                        <separator alignment="left" id="lro-5x-o4x"/>
+                        <label width="1" alignment="left" text="Tu pizza se esta preparando" textAlignment="center" numberOfLines="0" minimumScaleFactor="0.80000000000000004" id="yc8-7O-5QK"/>
+                        <button width="1" alignment="left" title="Terminar" id="FtD-gY-H3B">
+                            <connections>
+                                <segue destination="AgC-eL-Hgc" kind="push" id="Qif-kq-fkO"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="302" y="627"/>
+        </scene>
         <!--pushConfirmar-->
         <scene sceneID="m3b-Gj-qio">
             <objects>
@@ -91,18 +109,35 @@
                         <label width="1" alignment="left" text="Queso" textAlignment="center" minimumScaleFactor="0.90000000000000002" id="wuI-ye-Ws5"/>
                         <group width="1" alignment="left" id="sMe-rm-TpY">
                             <items>
-                                <label width="65" alignment="left" text="Ing1" textAlignment="left" minimumScaleFactor="0.80000000000000004" id="4Zm-ph-4Y0"/>
-                                <label width="65" alignment="left" text="Ing2" textAlignment="left" minimumScaleFactor="0.80000000000000004" id="pCi-kP-bud"/>
+                                <label width="65" alignment="left" text="Ing1" textAlignment="right" minimumScaleFactor="0.80000000000000004" id="4Zm-ph-4Y0"/>
+                                <label width="65" alignment="left" text="Ing2" textAlignment="center" minimumScaleFactor="0.80000000000000004" id="pCi-kP-bud"/>
                             </items>
                         </group>
                         <group width="1" alignment="left" id="QFW-Ys-fBC">
                             <items>
-                                <label width="65" alignment="left" text="Ing3" textAlignment="left" minimumScaleFactor="0.80000000000000004" id="UJA-EQ-uKz"/>
-                                <label width="65" alignment="left" text="Ing4" textAlignment="left" minimumScaleFactor="0.80000000000000004" id="1Bu-hX-eSh"/>
+                                <label width="65" alignment="left" text="Ing3" textAlignment="right" minimumScaleFactor="0.80000000000000004" id="UJA-EQ-uKz"/>
+                                <label width="65" alignment="left" text="Ing4" textAlignment="center" minimumScaleFactor="0.80000000000000004" id="1Bu-hX-eSh"/>
                             </items>
                         </group>
-                        <label width="65" alignment="left" text="Ing5" textAlignment="left" minimumScaleFactor="0.80000000000000004" id="hkD-AL-qRB"/>
+                        <label width="1" alignment="left" text="Ing5" textAlignment="center" minimumScaleFactor="0.80000000000000004" id="hkD-AL-qRB"/>
+                        <separator alignment="left" id="KWk-Nv-oRx"/>
+                        <button width="1" alignment="left" title="Confirmar Orden" id="lQA-jv-31d">
+                            <fontDescription key="font" type="system" pointSize="14"/>
+                            <connections>
+                                <action selector="bConfirmar" destination="ifS-2c-hD6" id="rBf-lE-7D3"/>
+                            </connections>
+                        </button>
                     </items>
+                    <connections>
+                        <outlet property="ing1" destination="4Zm-ph-4Y0" id="rAX-Gf-roO"/>
+                        <outlet property="ing2" destination="pCi-kP-bud" id="8EO-Tm-FPd"/>
+                        <outlet property="ing3" destination="UJA-EQ-uKz" id="rUV-Fm-qdY"/>
+                        <outlet property="ing4" destination="1Bu-hX-eSh" id="Xt4-Xi-psg"/>
+                        <outlet property="ing5" destination="hkD-AL-qRB" id="pEh-90-ycW"/>
+                        <outlet property="masa" destination="QyK-2B-AYR" id="OFQ-cx-bI6"/>
+                        <outlet property="queso" destination="wuI-ye-Ws5" id="avU-GF-mfc"/>
+                        <outlet property="tamaño" destination="naY-ge-LpL" id="Dpe-Sm-Z1A"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="633" y="608"/>

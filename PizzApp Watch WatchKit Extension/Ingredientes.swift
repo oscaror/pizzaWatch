@@ -83,6 +83,7 @@ class Ingredientes: WKInterfaceController {
 
     @IBAction func bContinuar() {
         print (tempPizza.ingredientes)
+        pushControllerWithName("pushConfirmar", context: tempPizza)
     }
 
     
@@ -354,7 +355,7 @@ class Ingredientes: WKInterfaceController {
             var i : Int = 0, ban : Bool = true
             while ban {
                 if tempPizza.ingredientes[i] == "" {
-                    tempPizza.ingredientes[i] = "Anchoa"
+                    tempPizza.ingredientes[i] = "Anchoas"
                     contador = contador + 1
                     contBoton = contBoton + 1
                     enableContinuar()
@@ -369,7 +370,7 @@ class Ingredientes: WKInterfaceController {
             
             
         }else {
-            let i = tempPizza.ingredientes.indexOf("Anchoa")
+            let i = tempPizza.ingredientes.indexOf("Anchoas")
             tempPizza.ingredientes.insert("", atIndex: i!)
             tempPizza.ingredientes.removeAtIndex(i!+1)
             contador = contador - 1
