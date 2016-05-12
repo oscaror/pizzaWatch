@@ -68,7 +68,7 @@ class Ingredientes: WKInterfaceController {
             self.pimiento.setEnabled(false)
             self.piña.setEnabled(false)
             self.anchoa.setEnabled(false)
-            print ("hola contador")
+            //print ("hola contador")
         }
 
     }
@@ -96,8 +96,8 @@ class Ingredientes: WKInterfaceController {
                     tempPizza.ingredientes[i] = "Jamón"
                     contador = contador + 1
                     contBoton = contBoton + 1
-                    print(tempPizza.ingredientes[i])
-                    print (contador)
+                    //print(tempPizza.ingredientes[i])
+                    //print (contador)
                     enableContinuar()
                     disable()
                     
@@ -115,7 +115,7 @@ class Ingredientes: WKInterfaceController {
             contador = contador - 1
             contBoton = contBoton - 1
             enableContinuar()
-            print ("else", contador)
+            //print ("else", contador)
         }
         
     }
@@ -129,8 +129,8 @@ class Ingredientes: WKInterfaceController {
                     contador = contador + 1
                     contBoton = contBoton + 1
                     enableContinuar()
-                    print(tempPizza.ingredientes[i])
-                    print (contador)
+                    //print(tempPizza.ingredientes[i])
+                    //print (contador)
                     disable()
                     ban = false
                 }else{
@@ -148,7 +148,7 @@ class Ingredientes: WKInterfaceController {
             contBoton = contBoton - 1
             enableContinuar()
 
-            print ("else", contador)
+            //print ("else", contador)
         }
 
     }
@@ -162,8 +162,8 @@ class Ingredientes: WKInterfaceController {
                     contador = contador + 1
                     contBoton = contBoton + 1
                     enableContinuar()
-                    print(tempPizza.ingredientes[i])
-                    print (contador)
+                    //print(tempPizza.ingredientes[i])
+                    //print (contador)
                     disable()
                     ban = false
                 }else{
@@ -180,7 +180,7 @@ class Ingredientes: WKInterfaceController {
             contBoton = contBoton - 1
             enableContinuar()
 
-            print ("else", contador)
+            //print ("else", contador)
         }
         
     }
@@ -195,8 +195,8 @@ class Ingredientes: WKInterfaceController {
                     contador = contador + 1
                     contBoton = contBoton + 1
                     enableContinuar()
-                    print(tempPizza.ingredientes[i])
-                    print (contador)
+                    //print(tempPizza.ingredientes[i])
+                    //print (contador)
                     disable()
                     ban = false
                 }else{
@@ -213,7 +213,7 @@ class Ingredientes: WKInterfaceController {
             contBoton = contBoton - 1
             enableContinuar()
 
-            print ("else", contador)
+            //print ("else", contador)
         }
         
     }
@@ -228,8 +228,8 @@ class Ingredientes: WKInterfaceController {
                     contador = contador + 1
                     contBoton = contBoton + 1
                     enableContinuar()
-                    print(tempPizza.ingredientes[i])
-                    print (contador)
+                    //print(tempPizza.ingredientes[i])
+                    //print (contador)
                     disable()
                     ban = false
                 }else{
@@ -246,7 +246,7 @@ class Ingredientes: WKInterfaceController {
             contBoton = contBoton - 1
             enableContinuar()
 
-            print ("else", contador)
+            //print ("else", contador)
         }
         
     }
@@ -261,8 +261,8 @@ class Ingredientes: WKInterfaceController {
                     contador = contador + 1
                     contBoton = contBoton + 1
                     enableContinuar()
-                    print(tempPizza.ingredientes[i])
-                    print (contador)
+                    //print(tempPizza.ingredientes[i])
+                    //print (contador)
                     disable()
                     ban = false
                 }else{
@@ -279,7 +279,7 @@ class Ingredientes: WKInterfaceController {
             contBoton = contBoton - 1
             enableContinuar()
 
-            print ("else", contador)
+            //print ("else", contador)
         }
         
     }
@@ -294,8 +294,8 @@ class Ingredientes: WKInterfaceController {
                     contador = contador + 1
                     contBoton = contBoton + 1
                     enableContinuar()
-                    print(tempPizza.ingredientes[i])
-                    print (contador)
+                    //print(tempPizza.ingredientes[i])
+                    //print (contador)
                     disable()
                     ban = false
                 }else{
@@ -312,7 +312,7 @@ class Ingredientes: WKInterfaceController {
             contBoton = contBoton - 1
             enableContinuar()
 
-            print ("else", contador)
+            //print ("else", contador)
         }
         
     }
@@ -326,8 +326,8 @@ class Ingredientes: WKInterfaceController {
                     contador = contador + 1
                     contBoton = contBoton + 1
                     enableContinuar()
-                    print(tempPizza.ingredientes[i])
-                    print (contador)
+                    //print(tempPizza.ingredientes[i])
+                    //print (contador)
                     disable()
                     ban = false
                 }else{
@@ -344,7 +344,7 @@ class Ingredientes: WKInterfaceController {
             contBoton = contBoton - 1
             enableContinuar()
 
-            print ("else", contador)
+            //print ("else", contador)
         }
         
     }
@@ -359,8 +359,8 @@ class Ingredientes: WKInterfaceController {
                     contador = contador + 1
                     contBoton = contBoton + 1
                     enableContinuar()
-                    print(tempPizza.ingredientes[i])
-                    print (contador)
+                    //print(tempPizza.ingredientes[i])
+                    //print (contador)
                     disable()
                     ban = false
                 }else{
@@ -377,7 +377,7 @@ class Ingredientes: WKInterfaceController {
             contBoton = contBoton - 1
             enableContinuar()
 
-            print ("else", contador)
+            //print ("else", contador)
         }
         
     }

@@ -25,6 +25,7 @@
 		494364561CE3FEBC00E9D6FD /* Ingredientes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494364551CE3FEBC00E9D6FD /* Ingredientes.swift */; };
 		494364581CE3FF6700E9D6FD /* Queso.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494364571CE3FF6700E9D6FD /* Queso.swift */; };
 		4943645A1CE517F700E9D6FD /* Confirmar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494364591CE517F700E9D6FD /* Confirmar.swift */; };
+		4943645C1CE5260C00E9D6FD /* Terminar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4943645B1CE5260C00E9D6FD /* Terminar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,7 @@
 		494364551CE3FEBC00E9D6FD /* Ingredientes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ingredientes.swift; sourceTree = "<group>"; };
 		494364571CE3FF6700E9D6FD /* Queso.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queso.swift; sourceTree = "<group>"; };
 		494364591CE517F700E9D6FD /* Confirmar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Confirmar.swift; sourceTree = "<group>"; };
+		4943645B1CE5260C00E9D6FD /* Terminar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Terminar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 				494364571CE3FF6700E9D6FD /* Queso.swift */,
 				494364551CE3FEBC00E9D6FD /* Ingredientes.swift */,
 				494364591CE517F700E9D6FD /* Confirmar.swift */,
+				4943645B1CE5260C00E9D6FD /* Terminar.swift */,
 				4943643B1CE3D40700E9D6FD /* ExtensionDelegate.swift */,
 				4943643D1CE3D40700E9D6FD /* Assets.xcassets */,
 				4943643F1CE3D40700E9D6FD /* Info.plist */,
@@ -319,6 +322,7 @@
 				4943645A1CE517F700E9D6FD /* Confirmar.swift in Sources */,
 				494364581CE3FF6700E9D6FD /* Queso.swift in Sources */,
 				494364501CE3D84D00E9D6FD /* InfoPizza.swift in Sources */,
+				4943645C1CE5260C00E9D6FD /* Terminar.swift in Sources */,
 				494364521CE3DB4C00E9D6FD /* Tamaño.swift in Sources */,
 				494364541CE3EF7400E9D6FD /* Masa.swift in Sources */,
 			);

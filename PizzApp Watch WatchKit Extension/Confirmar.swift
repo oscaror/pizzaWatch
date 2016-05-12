@@ -58,6 +58,9 @@ class Confirmar: WKInterfaceController {
     }
 
     @IBAction func bConfirmar() {
-        pushControllerWithName("pushFinal", context: nil)
+        //pushControllerWithName("pushFinal", context: nil)
+        //WKInterfaceController.reloadRootControllersWithNames(["myInterfaceController"], contexts: [])
+        Confirmar.reloadRootControllersWithNames(["pushFinal"], contexts: [])
+
     }
 }

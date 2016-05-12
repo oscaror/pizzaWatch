@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--Inicio-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="PizzApp_Watch_WatchKit_App" customModuleProvider="target">
+                <controller identifier="Inicio" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="PizzApp_Watch_WatchKit_App" customModuleProvider="target">
                     <items>
                         <label alignment="left" text="Bienvenido a PizzApp!" textAlignment="center" minimumScaleFactor="0.80000000000000004" id="88i-Xb-p1U"/>
                         <button width="1" alignment="left" title="Iniciar" id="PYv-tb-kCD">
@@ -21,10 +21,10 @@
             </objects>
             <point key="canvasLocation" x="245" y="305"/>
         </scene>
-        <!--pushTamaño-->
+        <!--Atrás-->
         <scene sceneID="hP0-PG-r6w">
             <objects>
-                <controller identifier="pushTamaño" id="GIX-UG-huJ" customClass="Tamaño" customModule="PizzApp_Watch_WatchKit_Extension">
+                <controller identifier="pushTamaño" title="Atrás" id="GIX-UG-huJ" customClass="Tamaño" customModule="PizzApp_Watch_WatchKit_Extension">
                     <items>
                         <label alignment="left" text="Selecciona el tamaño" textAlignment="center" minimumScaleFactor="0.80000000000000004" id="SpH-95-c6b"/>
                         <separator alignment="left" id="IOE-oy-wJu"/>
@@ -50,10 +50,10 @@
             </objects>
             <point key="canvasLocation" x="465" y="305"/>
         </scene>
-        <!--pushMasa-->
+        <!--Atrás-->
         <scene sceneID="9p6-Zi-JGs">
             <objects>
-                <controller identifier="pushMasa" id="fww-hI-7jd" customClass="Masa" customModule="PizzApp_Watch_WatchKit_Extension">
+                <controller identifier="pushMasa" title="Atrás" id="fww-hI-7jd" customClass="Masa" customModule="PizzApp_Watch_WatchKit_Extension">
                     <items>
                         <label alignment="left" text="Selecciona la masa" textAlignment="center" minimumScaleFactor="0.90000000000000002" id="cEy-2L-NaO"/>
                         <separator alignment="left" id="EtH-Ul-CQN"/>
@@ -82,14 +82,14 @@
         <!--pushFinal-->
         <scene sceneID="vcs-tg-2c7">
             <objects>
-                <controller identifier="pushFinal" id="Yfl-N5-6ub">
+                <controller identifier="pushFinal" id="Yfl-N5-6ub" customClass="Terminar" customModule="PizzApp_Watch_WatchKit_Extension">
                     <items>
                         <label width="1" alignment="left" text="Orden confirmada" textAlignment="center" numberOfLines="0" minimumScaleFactor="0.80000000000000004" id="7FK-Om-Fkw"/>
                         <separator alignment="left" id="lro-5x-o4x"/>
                         <label width="1" alignment="left" text="Tu pizza se esta preparando" textAlignment="center" numberOfLines="0" minimumScaleFactor="0.80000000000000004" id="yc8-7O-5QK"/>
                         <button width="1" alignment="left" title="Terminar" id="FtD-gY-H3B">
                             <connections>
-                                <segue destination="AgC-eL-Hgc" kind="push" id="Qif-kq-fkO"/>
+                                <action selector="bTerminar" destination="Yfl-N5-6ub" id="XR5-OY-2rz"/>
                             </connections>
                         </button>
                     </items>
@@ -97,10 +97,10 @@
             </objects>
             <point key="canvasLocation" x="302" y="627"/>
         </scene>
-        <!--pushConfirmar-->
+        <!--Atrás-->
         <scene sceneID="m3b-Gj-qio">
             <objects>
-                <controller identifier="pushConfirmar" id="ifS-2c-hD6" customClass="Confirmar" customModule="PizzApp_Watch_WatchKit_Extension">
+                <controller identifier="pushConfirmar" title="Atrás" id="ifS-2c-hD6" customClass="Confirmar" customModule="PizzApp_Watch_WatchKit_Extension">
                     <items>
                         <label width="1" alignment="center" text="Esta es tu Pizza" textAlignment="center" id="6RG-mY-2mD"/>
                         <separator alignment="left" id="IpF-sg-KYB"/>
@@ -142,10 +142,10 @@
             </objects>
             <point key="canvasLocation" x="633" y="608"/>
         </scene>
-        <!--pushQueso-->
+        <!--Atrás-->
         <scene sceneID="dce-Ch-tfI">
             <objects>
-                <controller identifier="pushQueso" id="fHA-Xj-cTU" customClass="Queso" customModule="PizzApp_Watch_WatchKit_Extension">
+                <controller identifier="pushQueso" title="Atrás" id="fHA-Xj-cTU" customClass="Queso" customModule="PizzApp_Watch_WatchKit_Extension">
                     <items>
                         <label alignment="left" text="Selecciona el queso" textAlignment="center" minimumScaleFactor="0.90000000000000002" id="14r-gi-YRA"/>
                         <separator alignment="left" id="mdr-R4-YY2"/>
@@ -177,10 +177,10 @@
             </objects>
             <point key="canvasLocation" x="911" y="295"/>
         </scene>
-        <!--pushIngredientes-->
+        <!--Atrás-->
         <scene sceneID="CZl-5A-V6w">
             <objects>
-                <controller identifier="pushIngredientes" id="jam-rO-jbs" customClass="Ingredientes" customModule="PizzApp_Watch_WatchKit_Extension">
+                <controller identifier="pushIngredientes" title="Atrás" id="jam-rO-jbs" customClass="Ingredientes" customModule="PizzApp_Watch_WatchKit_Extension">
                     <items>
                         <label alignment="left" text="De 1-5 ingredientes" minimumScaleFactor="0.90000000000000002" id="u3D-2U-Y1j"/>
                         <separator alignment="left" id="Vvt-Cw-K9W"/>
