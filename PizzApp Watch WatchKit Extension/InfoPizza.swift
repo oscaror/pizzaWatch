@@ -13,21 +13,15 @@ class InfoPizza: NSObject {
     var tamaño : String
     var masa : String
     var queso : String
-    var ingrediente1 : String
-    var ingrediente2 : String
-    var ingrediente3 : String
-    var ingrediente4 : String
-    var ingrediente5 : String
+    var ingredientes : [String] 
+   
     
     override init() {
         tamaño = ""
         masa = ""
         queso = ""
-        ingrediente1 = ""
-        ingrediente2 = ""
-        ingrediente3 = ""
-        ingrediente4 = ""
-        ingrediente5 = ""
+        ingredientes = [ "","","","",""]
+        
         
     }
     

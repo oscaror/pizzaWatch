@@ -79,6 +79,34 @@
             </objects>
             <point key="canvasLocation" x="682" y="300"/>
         </scene>
+        <!--pushConfirmar-->
+        <scene sceneID="m3b-Gj-qio">
+            <objects>
+                <controller identifier="pushConfirmar" id="ifS-2c-hD6" customClass="Confirmar" customModule="PizzApp_Watch_WatchKit_Extension">
+                    <items>
+                        <label width="1" alignment="center" text="Esta es tu Pizza" textAlignment="center" id="6RG-mY-2mD"/>
+                        <separator alignment="left" id="IpF-sg-KYB"/>
+                        <label width="1" alignment="left" text="Tamaño" textAlignment="center" minimumScaleFactor="0.90000000000000002" id="naY-ge-LpL"/>
+                        <label width="1" alignment="left" text="Masa" textAlignment="center" minimumScaleFactor="0.90000000000000002" id="QyK-2B-AYR"/>
+                        <label width="1" alignment="left" text="Queso" textAlignment="center" minimumScaleFactor="0.90000000000000002" id="wuI-ye-Ws5"/>
+                        <group width="1" alignment="left" id="sMe-rm-TpY">
+                            <items>
+                                <label width="65" alignment="left" text="Ing1" textAlignment="left" minimumScaleFactor="0.80000000000000004" id="4Zm-ph-4Y0"/>
+                                <label width="65" alignment="left" text="Ing2" textAlignment="left" minimumScaleFactor="0.80000000000000004" id="pCi-kP-bud"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="QFW-Ys-fBC">
+                            <items>
+                                <label width="65" alignment="left" text="Ing3" textAlignment="left" minimumScaleFactor="0.80000000000000004" id="UJA-EQ-uKz"/>
+                                <label width="65" alignment="left" text="Ing4" textAlignment="left" minimumScaleFactor="0.80000000000000004" id="1Bu-hX-eSh"/>
+                            </items>
+                        </group>
+                        <label width="65" alignment="left" text="Ing5" textAlignment="left" minimumScaleFactor="0.80000000000000004" id="hkD-AL-qRB"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="633" y="608"/>
+        </scene>
         <!--pushQueso-->
         <scene sceneID="dce-Ch-tfI">
             <objects>
@@ -121,10 +149,73 @@
                     <items>
                         <label alignment="left" text="De 1-5 ingredientes" minimumScaleFactor="0.90000000000000002" id="u3D-2U-Y1j"/>
                         <separator alignment="left" id="Vvt-Cw-K9W"/>
+                        <switch width="1" alignment="left" title="Jamón" id="8cI-ab-uge">
+                            <connections>
+                                <action selector="ingJamon:" destination="jam-rO-jbs" id="vCk-4N-eZX"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Peperoni" id="VYo-sW-Ny6">
+                            <connections>
+                                <action selector="ingPeperoni:" destination="jam-rO-jbs" id="WtL-rr-g1J"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Pavo" id="aei-ae-f10">
+                            <connections>
+                                <action selector="ingPavo:" destination="jam-rO-jbs" id="Yyr-Vl-z44"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Salchicha" id="Yzv-vs-iHX">
+                            <connections>
+                                <action selector="ingSalchicha:" destination="jam-rO-jbs" id="wiv-ut-TsU"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Aceituna" id="h13-3q-YK1">
+                            <connections>
+                                <action selector="ingAceituna:" destination="jam-rO-jbs" id="aMq-m0-Xq0"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Cebolla" id="mbl-mw-EQw">
+                            <connections>
+                                <action selector="ingCebolla:" destination="jam-rO-jbs" id="nbX-Cc-ysq"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Pimiento" id="qPl-yY-zaN">
+                            <connections>
+                                <action selector="ingPimiento:" destination="jam-rO-jbs" id="3B2-jd-Fkl"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Piña" id="gHk-ns-3oe">
+                            <connections>
+                                <action selector="ingPiña:" destination="jam-rO-jbs" id="gVb-O4-IMG"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Anchoas" id="o83-W1-Irn">
+                            <connections>
+                                <action selector="ingAnchoa:" destination="jam-rO-jbs" id="o3a-fM-ZGW"/>
+                            </connections>
+                        </switch>
+                        <separator alignment="left" id="2X8-hL-p1a"/>
+                        <button width="1" alignment="left" title="Continuar" id="H4o-Xc-5yS">
+                            <connections>
+                                <action selector="bContinuar" destination="jam-rO-jbs" id="9Sp-CJ-VLO"/>
+                            </connections>
+                        </button>
                     </items>
+                    <connections>
+                        <outlet property="aceituna" destination="h13-3q-YK1" id="foY-0B-1GT"/>
+                        <outlet property="anchoa" destination="o83-W1-Irn" id="gKM-yE-bp2"/>
+                        <outlet property="cebolla" destination="mbl-mw-EQw" id="pvV-vE-TAR"/>
+                        <outlet property="continuar" destination="H4o-Xc-5yS" id="46A-o8-TrJ"/>
+                        <outlet property="jamon" destination="8cI-ab-uge" id="HRE-A6-t0x"/>
+                        <outlet property="pavo" destination="aei-ae-f10" id="Nbr-Sq-9Bg"/>
+                        <outlet property="peperoni" destination="VYo-sW-Ny6" id="mMj-ji-A9e"/>
+                        <outlet property="pimiento" destination="qPl-yY-zaN" id="1Hh-ls-HY5"/>
+                        <outlet property="piña" destination="gHk-ns-3oe" id="6Mu-4h-Szr"/>
+                        <outlet property="salchicha" destination="Yzv-vs-iHX" id="j88-wC-uK2"/>
+                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="890" y="605"/>
+            <point key="canvasLocation" x="904" y="756.25"/>
         </scene>
     </scenes>
 </document>
