@@ -1,5 +1,5 @@
 //
-//  Masa.swift
+//  Queso.swift
 //  PizzApp Watch
 //
 //  Created by Oscar Ortega on 11/05/16.
@@ -10,15 +10,17 @@ import WatchKit
 import Foundation
 
 
-class Masa: WKInterfaceController {
-
-    var tempPizza = InfoPizza ()
+class Queso: WKInterfaceController {
     
+    var tempPizza = InfoPizza ()
+
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         let t = context as! InfoPizza
         tempPizza.tamaño = t.tamaño
+        tempPizza.masa = t.masa
         
+        print (tempPizza.tamaño, tempPizza.masa)
         // Configure interface objects here.
     }
 
@@ -32,27 +34,24 @@ class Masa: WKInterfaceController {
         super.didDeactivate()
     }
     
-    @IBAction func bDelgada() {
-        tempPizza.masa = "Delgada"
-        pushControllerWithName("pushQueso", context: tempPizza)
+    @IBAction func bMozzarella() {
+        tempPizza.queso = "Mozzarella"
+        pushControllerWithName("pushIngredientes", context: tempPizza)
 
     }
     
-    @IBAction func bCrujiente() {
-        tempPizza.masa = "Crujiente"
-        pushControllerWithName("pushQueso", context: tempPizza)
+    @IBAction func bCheddar() {
+        tempPizza.queso = "Cheddar"
+        pushControllerWithName("pushIngredientes", context: tempPizza)
     }
     
-    @IBAction func bGruesa() {
-        tempPizza.masa = "Gruesa"
-        pushControllerWithName("pushQueso", context: tempPizza)
+    @IBAction func bParmesano() {
+        tempPizza.queso = "Parmesano"
+        pushControllerWithName("pushIngredientes", context: tempPizza)
     }
 
+    @IBAction func bSinQueso() {
+        tempPizza.queso = "Sin Queso"
+        pushControllerWithName("pushIngredientes", context: tempPizza)
+    }
 }
-
-/*
- let valorContexto = Valor (d: "Peso Normal", v: resultado)
- 
- let c = context as! Valor //sin esto no deja sacar el contenido del objeto que se puso en el contexto
- etiquetaResultado.setText(String(c.valorIMC))
- */

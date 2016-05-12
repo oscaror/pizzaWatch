@@ -22,6 +22,8 @@
 		494364501CE3D84D00E9D6FD /* InfoPizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4943644F1CE3D84D00E9D6FD /* InfoPizza.swift */; };
 		494364521CE3DB4C00E9D6FD /* Tamaño.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494364511CE3DB4C00E9D6FD /* Tamaño.swift */; };
 		494364541CE3EF7400E9D6FD /* Masa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494364531CE3EF7400E9D6FD /* Masa.swift */; };
+		494364561CE3FEBC00E9D6FD /* Ingredientes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494364551CE3FEBC00E9D6FD /* Ingredientes.swift */; };
+		494364581CE3FF6700E9D6FD /* Queso.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494364571CE3FF6700E9D6FD /* Queso.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +88,8 @@
 		4943644F1CE3D84D00E9D6FD /* InfoPizza.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoPizza.swift; sourceTree = "<group>"; };
 		494364511CE3DB4C00E9D6FD /* Tamaño.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Tamaño.swift"; sourceTree = "<group>"; };
 		494364531CE3EF7400E9D6FD /* Masa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Masa.swift; sourceTree = "<group>"; };
+		494364551CE3FEBC00E9D6FD /* Ingredientes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ingredientes.swift; sourceTree = "<group>"; };
+		494364571CE3FF6700E9D6FD /* Queso.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queso.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +159,8 @@
 				494364391CE3D40700E9D6FD /* InterfaceController.swift */,
 				494364511CE3DB4C00E9D6FD /* Tamaño.swift */,
 				494364531CE3EF7400E9D6FD /* Masa.swift */,
+				494364571CE3FF6700E9D6FD /* Queso.swift */,
+				494364551CE3FEBC00E9D6FD /* Ingredientes.swift */,
 				4943643B1CE3D40700E9D6FD /* ExtensionDelegate.swift */,
 				4943643D1CE3D40700E9D6FD /* Assets.xcassets */,
 				4943643F1CE3D40700E9D6FD /* Info.plist */,
@@ -304,8 +310,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				494364561CE3FEBC00E9D6FD /* Ingredientes.swift in Sources */,
 				4943643C1CE3D40700E9D6FD /* ExtensionDelegate.swift in Sources */,
 				4943643A1CE3D40700E9D6FD /* InterfaceController.swift in Sources */,
+				494364581CE3FF6700E9D6FD /* Queso.swift in Sources */,
 				494364501CE3D84D00E9D6FD /* InfoPizza.swift in Sources */,
 				494364521CE3DB4C00E9D6FD /* Tamaño.swift in Sources */,
 				494364541CE3EF7400E9D6FD /* Masa.swift in Sources */,

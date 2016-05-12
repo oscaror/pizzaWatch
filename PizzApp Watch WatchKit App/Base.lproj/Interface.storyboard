@@ -79,5 +79,52 @@
             </objects>
             <point key="canvasLocation" x="682" y="300"/>
         </scene>
+        <!--pushQueso-->
+        <scene sceneID="dce-Ch-tfI">
+            <objects>
+                <controller identifier="pushQueso" id="fHA-Xj-cTU" customClass="Queso" customModule="PizzApp_Watch_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Selecciona el queso" textAlignment="center" minimumScaleFactor="0.90000000000000002" id="14r-gi-YRA"/>
+                        <separator alignment="left" id="mdr-R4-YY2"/>
+                        <button width="1" alignment="left" title="Mozzarella" id="EqA-Xf-sO0">
+                            <connections>
+                                <action selector="bMozzarella" destination="fHA-Xj-cTU" id="tEl-hM-lH4"/>
+                            </connections>
+                        </button>
+                        <separator alignment="left" id="YQN-19-63K"/>
+                        <button width="1" alignment="left" title="Cheddar" id="BG7-9q-TRQ">
+                            <connections>
+                                <action selector="bCheddar" destination="fHA-Xj-cTU" id="LTT-cQ-PuY"/>
+                            </connections>
+                        </button>
+                        <separator alignment="left" id="K68-aH-AgG"/>
+                        <button width="1" alignment="left" title="Parmesano" id="cdo-Jb-Prw">
+                            <connections>
+                                <action selector="bParmesano" destination="fHA-Xj-cTU" id="uwJ-7P-1DM"/>
+                            </connections>
+                        </button>
+                        <separator alignment="left" id="HCR-wj-zDe"/>
+                        <button width="1" alignment="left" title="Sin queso" id="lq9-D6-Ga9">
+                            <connections>
+                                <action selector="bSinQueso" destination="fHA-Xj-cTU" id="cyy-K6-UlS"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="911" y="295"/>
+        </scene>
+        <!--pushIngredientes-->
+        <scene sceneID="CZl-5A-V6w">
+            <objects>
+                <controller identifier="pushIngredientes" id="jam-rO-jbs" customClass="Ingredientes" customModule="PizzApp_Watch_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="De 1-5 ingredientes" minimumScaleFactor="0.90000000000000002" id="u3D-2U-Y1j"/>
+                        <separator alignment="left" id="Vvt-Cw-K9W"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="890" y="605"/>
+        </scene>
     </scenes>
 </document>
